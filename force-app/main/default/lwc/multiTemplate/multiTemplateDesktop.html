@@ -1,0 +1,36 @@
+<template>
+    <template if:true={listView.data}>
+        <table class="slds-table slds-table_cell-buffer slds-table_bordered slds-table_col-bordered">
+            <thead>
+                <tr class="slds-line-height_reset">
+                    <th class="" scope="col">
+                        <div class="slds-truncate" title="Contact Name">Name</div>
+                    </th>
+                    <th class="" scope="col">
+                        <div class="slds-truncate" title="Phone">Phone</div>
+                    </th>
+                    <th class="" scope="col">
+                        <div class="slds-truncate" title="Email">Email</div>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <template for:each={contacts} for:item="contact">
+                    <tr class="slds-hint-parent" key={contact.fields.Id.value}>
+                        <th data-label="Contact Name" scope="row">
+                            <div class="slds-truncate" title={contact.fields.Name.value}>
+                                <a href="javascript:void(0);" tabindex="-1">{contact.fields.Name.value}</a>
+                            </div>
+                        </th>
+                        <td data-label="Phone">
+                            <div class="slds-truncate" title={contact.fields.Phone.value}>{contact.fields.Phone.value}</div>
+                        </td>
+                        <td data-label="Email">
+                            <div class="slds-truncate" title={contact.fields.Email.value}>{contact.fields.Email.value}</div>
+                        </td>
+                    </tr>
+                </template>
+            </tbody>
+        </table>
+    </template>
+</template>

@@ -1,0 +1,11 @@
+.section4 {
+    --sds-c-button-brand-color-background: purple;
+    --sds-c-button-brand-color-border: purple;
+}
+
+/*
+:host{
+    --sds-c-button-brand-color-background: purple;
+    --sds-c-button-brand-color-border: purple;
+}
+*/

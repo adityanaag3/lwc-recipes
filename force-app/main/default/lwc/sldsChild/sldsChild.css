@@ -1,0 +1,24 @@
+@import 'c/sharedCss';
+
+.tokens-demo div{
+    width: 100px;
+    height: 100px;
+}
+
+.lwc-token{
+    background-color: var(--lwc-colorBrand);
+}
+
+.aura-token{
+    background-color: var(--c-myBackgroundColor);
+}
+
+.shared-token{
+    background-color: var(--my-shared-color);
+}
+
+.parent-token{
+    background-color: var(--my-parent-defined-color);
+}
+
+

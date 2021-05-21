@@ -1,0 +1,6 @@
+<apex:page>
+    <apex:slds/>    
+    <div class="slds-scope">
+        <button class="slds-button slds-button_brand" label="Click me">Click me</button>
+    </div>
+</apex:page>

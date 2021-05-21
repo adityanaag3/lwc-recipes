@@ -1,0 +1,52 @@
+<template>
+    <lightning-card title="MiscModal" icon-name="custom:custom19">
+        <div class="slds-var-m-around_medium">
+            <lightning-button
+                label="Show First modal"
+                onclick={handleShowFirstModal}
+            ></lightning-button>
+            <lightning-button
+                label="Show Second modal"
+                onclick={handleShowSecondModal}
+            ></lightning-button>
+           
+            <c-modal header="This is first modal" modal-id="1">
+                <div>
+                    This is the body of the first modal.
+                </div>
+                <div slot="footer">
+                    <lightning-button
+                        label="Close"
+                        variant="brand"
+                        onclick={handleCloseModal}
+                    ></lightning-button>
+                </div>
+            </c-modal>
+        
+            <c-modal header="This is second modal" modal-id="2">
+                <div>
+                    <img src="https://site-energy-1645-dev-ed--c.documentforce.com/file-asset/recipes_sq_logo?v=1&width=128&height=128">
+                </div>
+                <div slot="footer">
+                    <lightning-button
+                        label="Save"
+                        variant="success"
+                        onclick={handleCloseModal}
+                    ></lightning-button>
+                    <lightning-button
+                        label="Delete"
+                        variant="destructive"
+                        onclick={handleCloseModal}
+                    ></lightning-button>
+                </div>
+            </c-modal>
+
+        </div>
+
+        <c-view-source source="lwc/miscModal" slot="footer">
+            Use query selectors to access DOM elements.
+        </c-view-source>
+    </lightning-card>
+
+    
+</template>

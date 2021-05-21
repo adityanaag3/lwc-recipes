@@ -1,0 +1,14 @@
+{
+    "packageDirectories": [
+        {
+            "path": "force-app",
+            "default": true,
+            "package": "LWCRecipes",
+            "versionName": "Winter '21",
+            "versionNumber": "50.0.0.NEXT"
+        }
+    ],
+    "namespace": "",
+    "sourceApiVersion": "50.0",
+    "sfdcLoginUrl": "https://login.salesforce.com"
+}

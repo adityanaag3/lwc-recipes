@@ -1,0 +1,8 @@
+<aura:component implements="flexipage:availableForAllPageTypes">
+    <lightning:card title="SLDS in Aura">
+        <div class="slds-var-p-around_medium">
+            <button class="slds-button slds-button_brand">Click me</button>
+            <lightning:button label="Click me"></lightning:button>
+        </div>
+    </lightning:card>
+</aura:component>	

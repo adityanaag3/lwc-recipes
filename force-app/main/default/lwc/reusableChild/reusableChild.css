@@ -1,0 +1,7 @@
+.content{
+    border: 1px solid rgb(255, 202, 202);
+    padding: 20px;
+    margin-bottom: 10px;
+    background: var(--comp-bg-color, #fff);
+    text-align: var(--comp-align, left);
+}

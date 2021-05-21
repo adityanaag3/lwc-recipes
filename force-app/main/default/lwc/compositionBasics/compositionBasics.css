@@ -1,0 +1,5 @@
+@import 'c/cssLibrary';
+
+div{
+    background: red;
+}
